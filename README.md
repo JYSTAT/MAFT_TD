@@ -9,7 +9,7 @@ This repository contains an R implementation of the `MAFT_TD()` function, which 
 ## Main Features
 
 - Support for **time-dependent covariates**
-- **Nonparametric Gaussian scale mixtures** for error distribution
+- Assumes **a nonparametric Gaussian scale mixture distribution** for the log-transformed survival time (log(T₀))
 - Efficient optimization via **directional derivative-based support update**
 - **EM-type algorithm** for coefficient estimation
 - **Bootstrapped standard errors** available
