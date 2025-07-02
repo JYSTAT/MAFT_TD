@@ -44,6 +44,7 @@ result$Final_Est
 
 ## License & Author
 
+
 This software is licensed for academic and research use only.  
 Copyright (c) 2025  
 Department of Applied Statistics, Yonsei University  
