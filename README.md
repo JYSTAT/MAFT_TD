@@ -41,16 +41,20 @@ result <- MAFT_TD(dat = dat, X = c("Z1", "X"), subject_id = "ID", process = TRUE
 # View results
 result$Final_Est
 
+## Installation & Example Usage
 
-## License & Author
+```r
+# Install required packages
+install.packages(c("dplyr", "survival", "nloptr", "nnls"))
 
+# Load the main function
+source("MAFT_TD.R")
 
-This software is licensed for academic and research use only.  
-Copyright (c) 2025  
-Department of Applied Statistics, Yonsei University  
-Department of Statistics, Yeungnam University  
-All rights reserved. Redistribution or commercial use is prohibited without explicit permission.  
+# Load example data
+dat <- read.csv("Normal_b111.csv")
 
-**Ju-young Park**  
-Assistant Professor, Department of Statistics, Yeungnam University  
-GitHub: [JYSTAT](https://github.com/JYSTAT)
+# Fit the model
+result <- MAFT_TD(dat = dat, X = c("Z1", "X"), subject_id = "ID", process = TRUE)
+
+# View results
+result$Final_Est
