@@ -18,10 +18,7 @@ This repository contains an R implementation of the `MAFT_TD()` function, which 
 
 - `MAFT_TD.R` – Main function including all supporting routines
 - `MAFT_TD.Rproj` – RStudio project file
-- `Normal_b111.csv` – Simulated dataset assuming a log-normal survival distribution with parameters:  
-   - Intercept = 1  
-   - Coefficient for time-dependent covariate = 1  
-   - Coefficient for time-independent covariate = 1
+- `Normal_b111.csv` – Example data simulated under log-normal model with true coefficients (intercept = 1, Z1 = 1, X = 1)
 
 ## Installation & Example Usage
 
@@ -40,21 +37,16 @@ result <- MAFT_TD(dat = dat, X = c("Z1", "X"), subject_id = "ID", process = TRUE
 
 # View results
 result$Final_Est
+```
 
-## Installation & Example Usage
+## License & Author
 
-```r
-# Install required packages
-install.packages(c("dplyr", "survival", "nloptr", "nnls"))
+This software is licensed for academic and research use only.  
+Copyright (c) 2025  
+Department of Applied Statistics, Yonsei University  
+Department of Statistics, Yeungnam University  
+All rights reserved. Redistribution or commercial use is prohibited without explicit permission.  
 
-# Load the main function
-source("MAFT_TD.R")
-
-# Load example data
-dat <- read.csv("Normal_b111.csv")
-
-# Fit the model
-result <- MAFT_TD(dat = dat, X = c("Z1", "X"), subject_id = "ID", process = TRUE)
-
-# View results
-result$Final_Est
+**Ju-young Park**  
+Assistant Professor, Department of Statistics, Yeungnam University  
+GitHub: [JYSTAT](https://github.com/JYSTAT)
