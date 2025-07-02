@@ -40,3 +40,16 @@ result <- MAFT_TD(dat = dat, X = c("Z1", "X"), subject_id = "ID", process = TRUE
 
 # View results
 result$Final_Est
+
+
+## License & Author
+
+This software is licensed for academic and research use only.  
+Copyright (c) 2025  
+Department of Applied Statistics, Yonsei University  
+Department of Statistics, Yeungnam University  
+All rights reserved. Redistribution or commercial use is prohibited without explicit permission.  
+
+**Ju-young Park**  
+Assistant Professor, Department of Statistics, Yeungnam University  
+GitHub: [JYSTAT](https://github.com/JYSTAT)
